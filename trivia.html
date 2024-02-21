@@ -1,89 +1,111 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="apple-touch-icon" href="imagenesant/apple-touch-icon.png">
+	<link rel="favicon" href="imagenesant/favicon.ico">
+	<link rel="shortcut icon" href="imagenesant/favicon.ico">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ant-man:el hombre hormiga</title>
+	<title>Ant-Man | El Hombre Hormiga</title>
 	<link rel="stylesheet" type="text/css" href="css/estiloant.css">
+	<link rel="stylesheet" type="text/css" href="css/antman.css">
+
 </head>
 <body>
 	<main>
 		
          <header>
-          	<a href="index.html"class="antmanlogo">
+			 <div class="logoimg">          	<a href="index.html" class="antmanlogo">
           		
-				<img src="imagenesant/antmanlogo.png">
-				<h2 class="nombre-pelicula">ANT-MAN:EL HOMBRE HORMIGA</h2>
-			
-			</a>
-			
-			<nav>
-				<ul>
-					<a href="personajes.html">PERSONAJES</a>
-					<a href="trivia.html">TRIVIA</a>
-					<a href="escenas.html">ESCENAS</a> 
-				</ul>
+<img alt="casco" src="imagenesant/antmanlogo.png" width="65" height="67" id="cascologo">
+				     <img src="imagenesant/logo.png" width="220" height="60" id="logologo" >
+				  
+				 </a>			 </div>
 
-			</nav>	
-		</header>
+   
+ 
+ 
+ <nav>
+ <ul>
+	
+ 	<a href="personajes.html">PERSONAJES</a>
+	  	<a href="escenas.html">ESCENAS</a> 
+ 	<a href="trivia.html">TRIVIA</a>
 
+</ul>
 
+ </nav>	
+</header>
 
 
 
 <h4 class="encabezadotrivia">¡PARTICIPA DE ESTA TRIVIA SOBRE ANT-MAN Y GANATE UNA REMERA ESPECTACULAR!</h4>
 
 
+<div class="contenidotrivia">
 
-
+	<div class="remera"><h1>Completá la encuesta</h1><p>Sorteamos una remera nueva el primer día de cada mes&nbsp; Nos contactaremos con el ganador por correo electrónico.<br>
+	</p>
+    <img alt="reme" width="400" src="imagenesant/ant-man-costume-t-shirt_2.jpg"></div>
+	
+	
 <form method="post" action="mailto:correo@mail.com">
-<label>Nombre</label> <br>
-<input class="cajas" name="nombre" required> <br>
-<label>Password</label> <br>
-<input class="cajas" name="password"> <br>
-<label>Mail</label> <br>
-<input class="cajas" name="correo"> <br>
-<input type="submit" name="enviar"> <br>
-
-<label>¿Mayor de 18 años?</label> <br>
- <input type="radio" name="edad" value="si"> Si <br>
- <input type="radio" name="edad" value="no"> No <br>
+<label>Nombre *</label> <br>
+<input class="cajas" name="nombre" required> 
+<!-- <label>Password</label> <br>
+<input class="cajas" name="password"> <br> -->
+<label>Mail *</label> 
+<input class="cajas" name="correo" required> 
+<label>Teléfono *</label> 
+<input class="cajas" name="telefono" required> 
 
 
-<label>¿Personaje Favorito?</label><br>
 
 
-<input type="checkbox" name="color" value="rojo">Ant-Man<br>
-<input type="checkbox" name="color" value="azul">Henry Pym<br>
-<input type="checkbox" name="color" value="amarillo">Hope van Dyne<br>
-<input type="checkbox" name="color" value="naranja">Darren Cross<br>
 
-<label>¿Si tuvieras un poder, cual seria?</label><br>
+<label>¿Personaje Favorito?</label>
 
-<select>
-	<option>Super fuerza</option>
-	<option>Hacerse pequeño</option>
-	<option>Leer mentes</option>
-	<option>Correr a la velocidad de la luz</option>
-	<option>Poder volar</option>
-</select> <br>
+<div class="inline-chk">
+	<label for="chkAnt"><input id="chkAnt" type="checkbox" name="color" value="rojo">Ant-Man</label>
+	<label for="chkHenry"><input id="chkHenry" type="checkbox" name="color" value="azul">Henry Pym</label>
+	<label for="chkHope"><input id="chkHope" type="checkbox" name="color" value="amarillo">Hope van Dyne</label>
+	<label for="chkDarren"><input id="chkDarren" type="checkbox" name="color" value="naranja">Darren Cross</label>
+	
+</div>
 
-<label>¡Que te parecio la pelicula!</label>
+
+<div class="div-select">
+	<label>¿Si tuvieras un poder, cual seria?</label>
+
+	<select>
+		<option>Super fuerza</option>
+		<option>Hacerse pequeño</option>
+		<option>Leer mentes</option>
+		<option>Correr a la velocidad de la luz</option>
+		<option>Poder volar</option>
+	</select> 
+</div>
+
+
+<label>¿Qué te parecio la pelicula?</label>
 <textarea rows="5" name="comentarios" class="cajas"></textarea> <br>
 
-<input type="submit" name="enviar" value="Participa" class="btn"><br>
-<input type="reset" name="borrar" value="Arrepentido" class="btn"><br>
+<div class="div-botones">
+	<input type="submit" name="enviar" value="Participa" class="btn">
+	
+</div>
+
 
 
 </form>
-
+</div>
 <footer>
 
-	<a href="https://www.marvel.com/"class="marvellogo">
-	<img src="imagenesant/marvellogo.png">
+	<a href="https://www.marvel.com/" class="marvellogo">
+	<img alt="logo" src="imagenesant/marvellogo.png">
 </a>
-	<a href="https://www.uces.edu.ar/"class="uces">
-		<img src="imagenesant/uces.jpg">
+	<a href="https://www.uces.edu.ar/" class="uces">
+		<img alt="uces" src="imagenesant/uces.jpg">
 </a>
 
 <div class="nombrealumno">
@@ -92,7 +114,8 @@
 </div>
 	<div class="disney">
 
-	<img src="imagenesant/disney.png">
+		<a href="https://www.disneyplus.com/es-ar"><img class="img-disney" src="imagenesant/disney.png"></a>
+
 	</div>
 
 
