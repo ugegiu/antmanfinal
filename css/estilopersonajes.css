@@ -277,7 +277,7 @@ h4{
 /* LARGE (desktops, 992px and up)/ */
 @media (min-width: 992px) and (max-width: 1200px) {
 	.videocast {width:30% !important;}
-	.bloques {width:70%;max-width: 100% !important;  padding-left: 5%;}
+	.bloques {width:70%;max-width: 100% !important;  padding-left: 5px;}
     .galeria{
         flex-wrap: wrap;
     }

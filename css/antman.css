@@ -30,8 +30,9 @@ box-sizing: border-box;
 }
 
 .contenidotrivia .remera {
-    width: 368px;
+    width: min-content;
     float: left;
+    
 }
 .contenidotrivia .remera h1 {
     margin: 10px;
@@ -61,7 +62,7 @@ box-sizing: border-box;
     align-content: top;
     display: flex;
  
-    height: 80vh;
+    height: 100%;
 }
 
 
@@ -296,7 +297,7 @@ h3{
 @media (min-width : 290px ) and ( max-width : 575px ){
 nav {
     padding-right: 20px;
-    width: 40%;
+    width: 35%;
 }
 
 .galeria .fondonegro { margin-top:0 !important;
@@ -308,16 +309,16 @@ nav {
 .contenidotrivia {
     padding: 15px 15px 15px 15px !important;
     background-image: url(../imagenesant/ant-man-costume-t-shirt.jpg);
-    height: 100vh;
-    min-height: 700px;
+    
+    min-height: 750px;
 }
 	.contenidotrivia img {display:none; width:80% !important;padding-left:20%;}
 	.remera { width:95% !important;}
-	form {width:initial !important ;margin-left:0px !important;}
+	form {width:100% !important ;margin-left:0px !important;}
 
     main{
         width: auto;
-		min-height: 100vh;
+		height: 650px !important;
     }
     main header{
         width: auto;
@@ -405,7 +406,7 @@ nav {
 	.contenidotrivia {
     padding: 15px 15px 15px 15px !important;
     background-image: url(../imagenesant/ant-man-costume-t-shirt.jpg);
-    height: 100vh;
+    height: 700px;
     min-height: 700px;
 }
 	.contenidotrivia img {display:none; width:80% !important;padding-left:20%;}
@@ -414,7 +415,8 @@ nav {
 	
     main{
         width: auto;
-		min-height: 100vh;
+		min-height: 700px !important;
+        height: 700px !important;
     }
     main header{
         width: auto;
@@ -503,12 +505,14 @@ nav {
 @media (min-width: 768px) and (max-width: 991px) {
 	
 	.contenidotrivia img {width:250px !important;}
-	.galeria {height:initial !important;}
-	.remera {padding:20px !important;}
+
+	.remera {padding:20px 15px 0px 10% !important;}
 	.boton {display:none;}
     main{
+        
         width: auto;
-		   min-height: 100vh;
+        min-height: 0 !important;
+        height: 100% !important;
     }
     main header{
         width: auto;
@@ -568,15 +572,19 @@ nav {
         width: 70px;
     }
 
-	form {padding:10px !important; margin-top:20px !important;}
+	form {width:375px !important ;padding:10px !important; margin-top:20px !important; margin-left: 0px !important;}
 }
 /* LARGE (desktops, 992px and up)/ */
 @media (min-width: 992px) and (max-width: 1200px) {
+
     main{
         max-width: 100%;
-		   min-height: 700px !important;
+		   min-height: 0px !important;    
+           height: 100% !important;
 
     }
+
+   
     main header{
         max-width: 100%;
     }
@@ -617,7 +625,8 @@ nav {
 @media (min-width: 1200px) {
     main{
         max-width: 100%;
-		   min-height: 700px;
+		   min-height: 0px !important;    
+           height: 100% !important;
 
     }
     main header{

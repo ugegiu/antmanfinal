@@ -163,7 +163,7 @@ section img{
     border-radius: 0;
     /* [disabled]box-shadow: 1px 3px 8px 1px #000; */
     width: 21%;
-    padding: 20px;
+    padding: 20px;max-height: 500px;
     /* [disabled]-webkit-box-shadow: 1px 3px 8px 1px #000; */
     float: none;
 }
@@ -288,6 +288,20 @@ section img{
 
 /* MEDIUM (tablets, 768px and up)/ */
 @media (min-width: 768px) and (max-width: 991px){
+
+    .galeria .escena {
+        width: 100% !important;
+    }
+    
+    
+        .galeria .fondonegro { display: block !important;
+        padding-left: 0;}
+        .galeria .fondonegro { margin-top:0 !important;
+            margin-bottom: auto;}
+        .galeria  {
+            height: 2100px !important;
+           
+        }
     main{
         width: auto;
     }
@@ -335,5 +349,6 @@ section img{
         justify-content: space-between;
      
     }
-   
+   .galeria {max-height: 500px !important;}
+   .galeria .fondonegro {max-height: 500px !important;}
 }
