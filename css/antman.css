@@ -1,11 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+.seccionsinopsis {background-color:white;
+background-image:none;}
 
 *{ font-family: 'Montserrat', sans-serif;
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+.logoimg .antmanlogo #cascologo {
+}
+.logoimg .antmanlogo #cascologo {
+}
+.logoimg .antmanlogo #cascologo {
+}
+
+
+
+.galeria .videocast p {
+    padding-bottom: 20px;
+    font-size: 0.8em;
+    padding-right: 20px;
+
+}
+
+.contenidotrivia .remera p {
+    margin: 10px;
+    color: white;
+}
+
+.contenidotrivia .remera {
+    width: 408px;
+    float: left;
+}
+.contenidotrivia .remera h1 {
+    margin: 10px;
+    color: red;
+}
+
+
+.contenidotrivia {
+    padding: 20px 15% 20px 15%;
+    background-image: url(../imagenesant/ant-man-costume-t-shirt.jpg);
+    
+    min-height: 560px;
+}
+
+
+
+.galeria .fondonegro {
+    background-color: rgba(41,41,41,0.65);
+    padding-top: auto;
+    padding-bottom: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    width: 100%;
+    vertical-align: top;
+    align-content: top;
+    display: flex;
+ 
+    height: 100%;
+}
+
+
+#logologo {margin-left:10px; width:220px; height:60px;}
+
 
 
 
@@ -17,8 +78,8 @@ body{
 
 main{
 
-    width: 1280px;
-    height: 810px;
+    width: 100%;
+   height:100vh;
     background-color: transparent;
     margin-left: auto;
     margin-right: auto;
@@ -27,19 +88,22 @@ main{
     border-style: solid;
     border-width: 0px;
     border-radius: 0px;
+    background-image: url(../imagenesant/antmansi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 
 }
 
 section{
-width: 1280px;
-height: 700px;
-background-color:transparent;
+width: 100%;
+
 }
 
 
 
 .section-index{
-background-image:url(../imagenesant/antmansi.jpg);
+/*background-image:url(../imagenesant/antmansi.jpg);*/
 }
 
 
@@ -52,14 +116,12 @@ a{
 
 header{
     display: flex;
-    width: 1280px;
-    height: 73px;
+    width: 100%;
+    height: 95px;
     background-color: #eb2f06;
     justify-content: space-between;
     align-items: center;
-    padding: 4px;
-
-    
+      
 }
 
 .titulo{
@@ -71,6 +133,10 @@ header{
 
 }
 
+.logoimg{
+    padding: 20px;
+    width: 50%;
+}
 .titulo2{
     font-size: 25px;
     position: absolute;
@@ -88,11 +154,36 @@ header{
 
 }
 
+.boton { margin-top:10px;
+	width:130px;
+height: 30px;
+background-color:red;
+padding:5px 10px;
+	font-weight:bold;
+}
+.botonvideo {
+    margin-top: 10px;
+    width: 175px;
+    height: 30px;
+    background-color: red;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+nav ul a {padding-left:0.8em;}
+
+ul {margin-right: 1.5em;}
+.boton:hover { 
+background-color:darkred;
+	
+
+}
+nav {padding-right:20px;}
 nav a{
     font-weight: 600;
     padding-right: 10px;
-
-    max-width: 992px;
+min-width:500px;
+    
 }
 
 nav a:hover{
@@ -102,23 +193,39 @@ nav a:hover{
 
 }
 
-footer{
 
+#article1 .titulo2{
+    position: static;
+    width: fit-content;
+    background: #fff;
+	font-size: 1.3em;
+}
+footer{
+    margin-top: auto;
     display: flex;
-    width: 1280px;
-    height: 55px;
+    width: 100%;
+    height: 40px;
     background-color: #eb2f06;
     justify-content: space-between;
     align-items: center;
     padding: 3px;
-    position: static;
+    
 
 
 }
 .nombrealumno{
     margin: 0 auto;
 }
+footer img{
+    margin-top: 0;
+    margin-left: .5rem;
+    margin-bottom: 0;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 .nombre-alumno{
+    font-size: 1em;
     color: #fff;
 }
 .div{
@@ -128,14 +235,13 @@ footer{
 
 .marvellogo{
     display: flex;
-    height: 80px;
+   
     margin-right: 10px;
 
 }
 
 .uces{
     display: flex;
-    height: 50px;
    margin-left: 10px;
    /*position: absolute;
    left: 6% ;
@@ -143,14 +249,19 @@ footer{
 }
 
 
+
 .disney{
 
     display: flex;
-    height: 80px;
+    
     margin-right: 10px;
 /*position: absolute;
     left: 340%;
     top: -20%;*/
+}
+.disney img{
+    width: 38px;
+    height: 50px;
 }
 
 h1{
@@ -176,6 +287,7 @@ h2{
 
 h3{
     font-size: 30px;
+    color: red;
    /* position: relative;
     left: 155%;
     top: 10%;*/
@@ -184,9 +296,21 @@ h3{
 
 
 /* Small (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width : 290px ) and ( max-width : 767px ){
+	
+	.contenidotrivia {
+    padding: 15px 15px 15px 15px !important;
+    background-image: url(../imagenesant/ant-man-costume-t-shirt.jpg);
+    height: 100vh;
+    min-height: 700px;
+}
+	.contenidotrivia img {display:none; width:80% !important;padding-left:20%;}
+	.remera { width:95% !important;}
+	form {width:initial !important ;margin-left:0px !important;}
+	.galeria  {height:initial !important;}
     main{
         width: auto;
+		min-height: 100vh;
     }
     main header{
         width: auto;
@@ -194,9 +318,7 @@ h3{
     header h2{
         position: static;
     }
-    header a{
-        width: 50%;
-    }
+  
     header .nombre-pelicula{
         font-size: 14px;
     align-items: center;
@@ -212,6 +334,9 @@ h3{
     background-repeat: no-repeat;
     background-position: center center;
     width: auto;
+		max-height: 100%;
+		min-height: 600px;
+		height: 600px;
     }
     #article1{
         text-align: center;
@@ -220,20 +345,19 @@ h3{
         position: static!important;
     }
      #article1 h4{
-        position: static;
-        color: #fff;
-    text-shadow: 2px -3px 2px #000;
+        margin: auto;
     }
     footer{
         width: auto;
-        height: auto;
+        height: 40px;
     }
     footer img{
         max-width: 100%;
     }
     footer .marvellogo{
-        width: 80px;
+        width: 30px;
         height: auto;
+		margin: 0 !important;
     }
     .uces{
         position: static;
@@ -247,16 +371,40 @@ h3{
         position: static;
     }
     .disney img{
-        width: 70px;
+        width: 40px !important;
     }
+.logoimg .antmanlogo #cascologo {
+    width: 50px;
+    height: 50px;
+}
+	
+	.boton {display:none;}
+	
+.logoimg {
+    padding: 20px 0 0 20px;
+    width: 60%;
+}
+
+.logoimg .antmanlogo #logologo {
+    width: 100px;
+    height: 40px;
+}
+
+
 
 }
 
 
 /* MEDIUM (tablets, 768px and up)/ */
 @media (min-width: 768px) and (max-width: 991px) {
+	
+	.contenidotrivia img {width:250px !important;}
+	.galeria {height:initial !important;}
+	.remera {padding:20px !important;}
+	.boton {display:none;}
     main{
         width: auto;
+		   min-height: 100vh;
     }
     main header{
         width: auto;
@@ -279,21 +427,20 @@ h3{
     background-repeat: no-repeat;
     background-position: center center;
     width: auto;
+		height: 100vh;
     }
     #article1{
-        text-align: center;
+    text-align: center;
     }
     #article1 .titulo{
         position: static!important;
     }
      #article1 h4{
-        position: static;
-        color: #fff;
-    text-shadow: 2px -3px 2px #000;
+        margin: auto;
     }
     footer{
         width: auto;
-        height: auto;
+        height: 40px;
     }
     footer img{
         max-width: 100%;
@@ -317,28 +464,36 @@ h3{
         width: 70px;
     }
 
+	form {padding:10px !important; margin-top:20px;}
 }
 /* LARGE (desktops, 992px and up)/ */
 @media (min-width: 992px) and (max-width: 1200px) {
     main{
         width: auto;
+		   min-height: 700px;
     }
     main header{
         width: auto;
     }
     .section-index{
-        padding-top: 5rem;
-        background-image: url(../imagenesant/antmansi.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: auto;
+	padding-top: 5rem;
+	background-image: url(../imagenesant/antmansi.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: auto;
+		    height: 95vh;
+
     }
         footer{
         width: auto;
-        height: auto;
+        height: 40px;
     }
+    #article1{
+        margin-left: 1rem;
+    }   
     .titulo{
+        position: static;
         left: 1%;
     }
     .titulo2{
@@ -349,22 +504,23 @@ h3{
 /* X-LARGE (desktops, 1200px and up)/ */
 @media (min-width: 1280px) {
     main{
-        max-width: 1280px;
+        max-width: 100%;
+		   min-height: 700px;
+
     }
     main header{
-        max-width: 1280px;
+        max-width: 100%;
     }
     .section-index{
         padding-top: 5rem;
-        background-image: url(../imagenesant/antmansi.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    max-width: 1280px;
+        
+    max-width: 100%;
+		max-height:100%;
+        min-height:600px;
     }
         footer{
-        max-width: 1280px;
-        height: auto;
+    max-width: 100%;
+    height: 40px;
     }
     #article1{
         margin-left: 4rem;
@@ -376,3 +532,17 @@ h3{
 
 
 
+@media (min-width: 1440px){
+    main{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 700px;
+    height: 98vh;
+
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+}
