@@ -30,7 +30,7 @@ box-sizing: border-box;
 }
 
 .contenidotrivia .remera {
-    width: 408px;
+    width: 368px;
     float: left;
 }
 .contenidotrivia .remera h1 {
@@ -43,7 +43,7 @@ box-sizing: border-box;
     padding: 20px 5% 20px 20%;
     background-image: url(../imagenesant/ant-man-costume-t-shirt.jpg);
     
-    min-height: 545px;
+    min-height: 565px;
 }
 
 
@@ -61,7 +61,7 @@ box-sizing: border-box;
     align-content: top;
     display: flex;
  
-    height: 100%;
+    height: 80vh;
 }
 
 
@@ -464,10 +464,18 @@ h3{
         width: 70px;
     }
 
-	form {padding:10px !important; margin-top:20px;}
+	form {padding:10px !important; margin-top:20px !important;}
 }
 /* LARGE (desktops, 992px and up)/ */
 @media (min-width: 992px) and (max-width: 1200px) {
+    main{
+        max-width: 100%;
+		   min-height: 700px !important;
+
+    }
+    main header{
+        max-width: 100%;
+    }
     main{
         width: auto;
 		   min-height: 700px;
@@ -502,7 +510,7 @@ h3{
 }
 
 /* X-LARGE (desktops, 1200px and up)/ */
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
     main{
         max-width: 100%;
 		   min-height: 700px;
