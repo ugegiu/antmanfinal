@@ -1,5 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+ .galeria{
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    background-image: url(../imagenesant/antmanrunarmy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    vertical-align: top;
+    align-content: flex-start;
+    height: 100%;
+	 
+   
+    }
+
+.fondonegro {
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+}
+
+.escena {
+    text-align: left;
+    display: inline-block;
+    width: 200px;
+}
 
 *{ font-family: 'Montserrat', sans-serif;
 margin: 0;
@@ -10,15 +36,24 @@ box-sizing: border-box;
 body{
     background-color: transparent;
     margin: 0;
+    background-color: #b2bec3;
 
 }
 
-
+.encabezadoescenas{
+	text-align: center;
+	font-size: 24px;
+	padding: 1rem;
+	font-weight: bold;
+	color: #eb2f06;
+	background-color: #333;
+}
 main{
+    background-color: #A89F9F !important;
 
+ background-image: none !important;
     max-width: 1280px;  
     height: auto;
-    background-color:#b2bec3 ;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
@@ -73,15 +108,17 @@ footer{
 
 }
 footer img{
-    max-width: 100%;
+    max-width: 60px;
+    margin: 0 .5rem;
+}
+.nombre-alumno{
+    font-size: 20px;
+    color: #fff;
 }
 .marvellogo{
     max-width: 120px;
 }
-.nombre-alumno{
-    font-size: 30px;
-    color: #fff;
-}
+
 .nombrealumno
 {
     margin: 0 auto;
@@ -113,16 +150,57 @@ h3{
 
 
 section{
-    margin-top: 5rem;
-    display: flex;
-    justify-content: space-around;
+	/* [disabled]margin-top: 5rem; */
+	display: flex;
+	justify-content: space-around;
 }
 section img{
     max-width: 100%;
 }
 
+.galeria .escena {
+    overflow: hidden;
+    border-radius: 0;
+    /* [disabled]box-shadow: 1px 3px 8px 1px #000; */
+    width: 21%;
+    padding: 20px;
+    /* [disabled]-webkit-box-shadow: 1px 3px 8px 1px #000; */
+    float: none;
+}
+.fondonegro .escena p {
+    color: white;
+    font-size: 0.85em;
+}
+
+.galeria .escena img{
+   padding-bottom:10px;
+    display: block;
+    transition: all .4s ease;
+}
+.galeria .escena img:hover{
+    transform: scale(1.03);
+    width: auto;
+}
+@media (min-width: 200px) and (max-width: 576px) {
+.galeria .fondonegro { display: block !important;
+    padding-left: 0; }
+}
+
+.galeria .escena {
+    width: 100% !important;
+}
+
 /* Small (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
+	.galeria .escena {
+    width: 100% !important;
+}
+
+	.galeria .fondonegro { display: block !important;
+    padding-left: 0;}
+	
+	.galeria .escena {width:50% !important;}
+	
     main{
         width: auto;
     }
@@ -145,7 +223,7 @@ section img{
     }
     .section-index{
         padding-top: 5rem;
-        background-image: url(../imagenesant/antmansi.jpg);
+        
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -221,16 +299,22 @@ section img{
     }
     .galeria .escena{
         margin: 1rem 0;
-        text-align: center;
+        text-align: left;
     }
-   
+	.galeria .fondonegro {    display: block !important;
+    padding-left: 0;}
+   .galeria .escena {
+    width: 80% !important;
+}
+
 }
 
 /* LARGE (desktops, 992px and up)/ */
 @media (min-width: 992px) and (max-width: 1200px) {
+	
     .galeria{
         flex-wrap: wrap;
-        padding: .5rem;
+     
     }
 }
 
@@ -238,14 +322,10 @@ section img{
 /* X-LARGE (desktops, 1200px and up)/ */
 @media (min-width: 1280px) {
     main{
-        min-height: 100vh;
-        display: flex;
+       display: flex;
         flex-direction: column;
         justify-content: space-between;
-        max-width: 1280px;
+     
     }
-    .galeria{
-        flex-wrap: wrap;
-
-    }
+   
 }
