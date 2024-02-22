@@ -293,10 +293,108 @@ h3{
     top: 10%;*/
 }
 
+@media (min-width : 290px ) and ( max-width : 575px ){
+nav {
+    padding-right: 20px;
+    width: 40%;
+}
+
+.contenidotrivia {
+    padding: 15px 15px 15px 15px !important;
+    background-image: url(../imagenesant/ant-man-costume-t-shirt.jpg);
+    height: 100vh;
+    min-height: 700px;
+}
+	.contenidotrivia img {display:none; width:80% !important;padding-left:20%;}
+	.remera { width:95% !important;}
+	form {width:initial !important ;margin-left:0px !important;}
+	.galeria  {height:initial !important;}
+    main{
+        width: auto;
+		min-height: 100vh;
+    }
+    main header{
+        width: auto;
+    }
+    header h2{
+        position: static;
+    }
+  
+    header .nombre-pelicula{
+        font-size: 14px;
+    align-items: center;
+    display: flex;
+    }
+    nav ul a{
+        font-size: 12px;
+    }
+    .section-index{
+        padding-top: 5rem;
+        background-image: url(../imagenesant/antmansi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: auto;
+		max-height: 100%;
+		min-height: 600px;
+		height: 600px;
+    }
+    #article1{
+        text-align: center;
+    }
+    #article1 .titulo{
+        position: static!important;
+    }
+     #article1 h4{
+        margin: auto;
+    }
+    footer{
+        width: auto;
+        height: 40px;
+    }
+    footer img{
+        max-width: 100%;
+    }
+    footer .marvellogo{
+        width: 30px;
+        height: auto;
+		margin: 0 !important;
+    }
+    .uces{
+        position: static;
+        height: auto;
+    }
+    .nombre-alumno{
+        position: static;
+    }
+    .disney{
+        height: auto;
+        position: static;
+    }
+    .disney img{
+        width: 40px !important;
+    }
+.logoimg .antmanlogo #cascologo {
+    width: 50px;
+    height: 50px;
+}
+	
+	.boton {display:none;}
+	
+.logoimg {
+    padding: 20px 0 0 20px;
+    width: 40%;
+}
+
+.logoimg .antmanlogo #logologo {
+    width: 100px;
+    height: 40px;
+}
 
 
+}
 /* Small (landscape phones, 576px and up) */
-@media (min-width : 290px ) and ( max-width : 767px ){
+@media (min-width : 576px ) and ( max-width : 767px ){
 	
 	.contenidotrivia {
     padding: 15px 15px 15px 15px !important;
@@ -382,7 +480,7 @@ h3{
 	
 .logoimg {
     padding: 20px 0 0 20px;
-    width: 60%;
+    width: 40%;
 }
 
 .logoimg .antmanlogo #logologo {

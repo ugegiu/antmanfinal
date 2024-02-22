@@ -217,9 +217,11 @@ h4{
 
 /* Small (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
-		.videocast {width:100% !important;}
-	.galeria {display: block !important;}
-	.bloques {width:100%;max-width: 100% !important;}
+    .videocast {width:100% !important;}
+    .bloques {display:grid;width:100%;max-width: 100% !important;}
+	.actor {width:90%;}
+	.videocast {float:none;}
+	.galeria {display:block !important;}
     body{
         padding:0;
     }
@@ -234,11 +236,11 @@ h4{
     }
     .galeria{
         flex-direction: column;
-        align-items: center;
+      
     }
     .galeria .actor{
         margin: 1rem 0;
-        text-align: center;
+        text-align: left;
 		margin: 20px;
     }
     .nombre-alumno{
@@ -275,7 +277,7 @@ h4{
 /* LARGE (desktops, 992px and up)/ */
 @media (min-width: 992px) and (max-width: 1200px) {
 	.videocast {width:30% !important;}
-	.bloques {width:70%;max-width: 100% !important;  padding-left: 0;}
+	.bloques {width:70%;max-width: 100% !important;  padding-left: 5%;}
     .galeria{
         flex-wrap: wrap;
     }

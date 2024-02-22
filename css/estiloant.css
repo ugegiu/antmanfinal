@@ -307,8 +307,9 @@ footer img{
 
 /*Medium  (tablets, 768px and up)*/
 @media screen and (min-width: 768px) and (max-width: 991px){
-	.contenidotrivia {margin:0px;padding:0px !important
-		;}
+	.contenidotrivia {margin:0px;padding:0px 
+		;
+    padding-left:12% !important};
 	
 	form {margin:0px !important ;padding:0px !important;}
     header .nombre-pelicula{
