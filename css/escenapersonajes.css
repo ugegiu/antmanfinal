@@ -190,16 +190,24 @@ section img{
     width: 100% !important;
 }
 
+
 /* Small (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
 	.galeria .escena {
     width: 100% !important;
 }
 
+
 	.galeria .fondonegro { display: block !important;
     padding-left: 0;}
+    .galeria .fondonegro { margin-top:0 !important;
+        margin-bottom: auto;}
+    .galeria  {
+        height: 2100px !important;
+       
+    }
 	
-	.galeria .escena {width:50% !important;}
+	
 	
     main{
         width: auto;

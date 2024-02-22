@@ -299,6 +299,12 @@ nav {
     width: 40%;
 }
 
+.galeria .fondonegro { margin-top:0 !important;
+    margin-bottom: auto;}
+.galeria  {
+    height: 2100px !important;
+   
+}
 .contenidotrivia {
     padding: 15px 15px 15px 15px !important;
     background-image: url(../imagenesant/ant-man-costume-t-shirt.jpg);
@@ -308,7 +314,7 @@ nav {
 	.contenidotrivia img {display:none; width:80% !important;padding-left:20%;}
 	.remera { width:95% !important;}
 	form {width:initial !important ;margin-left:0px !important;}
-	.galeria  {height:initial !important;}
+
     main{
         width: auto;
 		min-height: 100vh;
@@ -405,7 +411,7 @@ nav {
 	.contenidotrivia img {display:none; width:80% !important;padding-left:20%;}
 	.remera { width:95% !important;}
 	form {width:initial !important ;margin-left:0px !important;}
-	.galeria  {height:initial !important;}
+	
     main{
         width: auto;
 		min-height: 100vh;
